@@ -1,0 +1,3 @@
+FROM almalinux:9
+ADD https://raw.githubusercontent.com/joindevops1/NOTES-GURU/main/06-docker/Day51.md /tmp/session-01.txt
+CMD [ "sleep","120" ]
