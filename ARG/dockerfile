@@ -1,4 +1,7 @@
 ARG version
-FROM almalinux:${version}
-RUN cat /etc/*release
+FROM almalinux:${version:-8}
+#RUN cat /etc/release
+ARG cource
+ARG TRAINER
+RUN echo "cource is :${cource},TRAINER is :${TRAINER}"
 CMD ["sleep","120"]
